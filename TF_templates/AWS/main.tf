@@ -242,7 +242,7 @@ resource "aws_instance" "rhel_server" {
     volume_size           = 20
     volume_type           = "gp3"
     delete_on_termination = true
-    encrypted             = true
+    encrypted             = false
   }
 
   user_data = <<-EOF
